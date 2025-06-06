@@ -1,24 +1,20 @@
 const gql = require("graphql-tag");
 
 const typeDefs = gql`
-type Track {
-    id: ID!
-    title: String!
-    author: Author!
-    thumbnail: String
-    length: Int
-    modulesCount: Int
-}
-
-type Author {
+    type SpaceCat {
     id: ID!
     name: String!
-    photo: String
-}
-
-type Query {
-    tracksForHome: [Track!]!
-}
+    age: Int
+    missions: [Mission]
+    }
+    type Mission {
+    id: ID!
+    name: String!
+    description: String!
+    }
+    type Query {
+    spaceCats: [SpaceCat]
+    }
 `;
 
 module.export = typeDefs;
