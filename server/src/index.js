@@ -10,8 +10,8 @@ const catSchema = require('./schemas/cats');
 async function StartApolloServer() {
     const server = new ApolloServer({
         schema: addMocksToSchema({ 
-            schema: makeExecutableSchema({ typeDefs: trackSchema}),
-            mocks: tracks
+            schema: makeExecutableSchema({ typeDefs: catSchema}),
+            mocks: spaceCats
         })
     });
 
