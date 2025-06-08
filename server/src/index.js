@@ -2,14 +2,16 @@ const { ApolloServer } = require("@apollo/server");
 const { startStandaloneServer } = require("@apollo/server/standalone");
 const { addMocksToSchema } = require("@graphql-tools/mock");
 const { makeExecutableSchema } = require("@graphql-tools/schema");
-const spaceCats = require('./schema');
-const spaceMocks = require("./mocks");
+const spaceCats = require('./schemas/cats');
+const catSchema = require('./schemas/cats');
+// const tracks = require('./mocks/tracks');
+// const trackSchema = require('./schemas/tracks');
 
 async function StartApolloServer() {
     const server = new ApolloServer({
         schema: addMocksToSchema({ 
-            schema: makeExecutableSchema({ typeDefs: spaceCats}),
-            mocks: spaceMocks
+            schema: makeExecutableSchema({ typeDefs: trackSchema}),
+            mocks: tracks
         })
     });
 

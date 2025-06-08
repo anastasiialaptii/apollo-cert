@@ -1,4 +1,4 @@
-const spaceMocks = {
+const spaceCats = {
   SpaceCat: () => ({
         id: () =>  "spacecat_01",
         name: () => "Special name",
@@ -7,4 +7,4 @@ const spaceMocks = {
     })
 }
 
-module.exports = spaceMocks;
+module.exports = spaceCats;
