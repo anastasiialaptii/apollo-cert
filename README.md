@@ -1,6 +1,6 @@
-# Odyssey Lift-off I: Basics
+# Odyssey Lift-off Certification
 
-I simply doing lessons with Apollo's learning platform. This course name is Odyssey Lift-off I!
+I'm simply doing lessons with Apollo's learning platform. This course name is Odyssey Lift-off I!
 You can [find the course lessons and instructions on Odyssey](https://odyssey.apollographql.com/lift-off-part1), 
 
 ## Navigation
